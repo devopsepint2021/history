@@ -1,0 +1,33 @@
+[ec2-user@ip-172-31-17-245 abcpro]$ history
+    1  cd abcpro/
+    2  ls -ltr
+    3  git branch -a
+    4  git checkout master
+    5  git pull
+    6  git branch -a
+    7  git branch bug102
+    8  git branch -a
+    9  git checkout bug102
+   10  git branch -a
+   11  ls -ltr
+   12  vi f6
+   13  git status
+   14  git add f6
+   15  git commit -m "bug102 fixed"
+   16  git log
+   17  git branch -a
+   18  git push
+   19  git push -u origin bug102
+   20  git branch -a
+   21  git checkout master
+   22  git branch -a
+   23  git merge bug102
+   24  git log
+   25  git branch -a
+   26  git push
+   27  git checkout bug102
+   28  git pull
+   29  git branch -a
+   30  git checkout -b bug103
+   31  git branch -a
+   32  history
