@@ -1,0 +1,1453 @@
+[ec2-user@ip-172-31-17-245 ~]$ ls -ltr
+total 0
+drwxrwxr-x 3 ec2-user ec2-user 83 Sep 12 17:47 abcpro
+[ec2-user@ip-172-31-17-245 ~]$ git clone git@github.com:devopsepint2021/mypro.git
+Cloning into 'mypro'...
+warning: You appear to have cloned an empty repository.
+[ec2-user@ip-172-31-17-245 ~]$ ls -ltr
+total 0
+drwxrwxr-x 3 ec2-user ec2-user 83 Sep 12 17:47 abcpro
+drwxrwxr-x 3 ec2-user ec2-user 18 Sep 18 15:23 mypro
+[ec2-user@ip-172-31-17-245 ~]$ cd mypro/
+[ec2-user@ip-172-31-17-245 mypro]$ 
+[ec2-user@ip-172-31-17-245 mypro]$ 
+[ec2-user@ip-172-31-17-245 mypro]$ 
+[ec2-user@ip-172-31-17-245 mypro]$ 
+[ec2-user@ip-172-31-17-245 mypro]$ 
+[ec2-user@ip-172-31-17-245 mypro]$ 
+[ec2-user@ip-172-31-17-245 mypro]$ ls -ltr
+total 0
+[ec2-user@ip-172-31-17-245 mypro]$ touch f1 f2
+[ec2-user@ip-172-31-17-245 mypro]$ 
+[ec2-user@ip-172-31-17-245 mypro]$ 
+[ec2-user@ip-172-31-17-245 mypro]$ 
+[ec2-user@ip-172-31-17-245 mypro]$ 
+[ec2-user@ip-172-31-17-245 mypro]$ ls -ltr
+total 0
+-rw-rw-r-- 1 ec2-user ec2-user 0 Sep 18 15:24 f2
+-rw-rw-r-- 1 ec2-user ec2-user 0 Sep 18 15:24 f1
+[ec2-user@ip-172-31-17-245 mypro]$ 
+[ec2-user@ip-172-31-17-245 mypro]$ git add f1
+[ec2-user@ip-172-31-17-245 mypro]$ git commit -m "a1"
+[master (root-commit) 8b2e54d] a1
+ 1 file changed, 0 insertions(+), 0 deletions(-)
+ create mode 100644 f1
+[ec2-user@ip-172-31-17-245 mypro]$ git add f2
+[ec2-user@ip-172-31-17-245 mypro]$ git commit -m "a2"
+[master 973a984] a2
+ 1 file changed, 0 insertions(+), 0 deletions(-)
+ create mode 100644 f2
+[ec2-user@ip-172-31-17-245 mypro]$ 
+[ec2-user@ip-172-31-17-245 mypro]$ 
+[ec2-user@ip-172-31-17-245 mypro]$ 
+[ec2-user@ip-172-31-17-245 mypro]$ git log
+commit 973a98441e4182f5354dbd17d16a1d51f61625fb (HEAD -> master)
+Author: devopsepint2021 <devopsepint2021@itopstube.com>
+Date:   Sat Sep 18 15:24:53 2021 +0000
+
+    a2
+
+commit 8b2e54dd8b910e3d3172500fd61f859b28b1bff5
+Author: devopsepint2021 <devopsepint2021@itopstube.com>
+Date:   Sat Sep 18 15:24:41 2021 +0000
+
+    a1
+[ec2-user@ip-172-31-17-245 mypro]$ 
+[ec2-user@ip-172-31-17-245 mypro]$ 
+[ec2-user@ip-172-31-17-245 mypro]$ 
+[ec2-user@ip-172-31-17-245 mypro]$ 
+[ec2-user@ip-172-31-17-245 mypro]$ 
+[ec2-user@ip-172-31-17-245 mypro]$ 
+[ec2-user@ip-172-31-17-245 mypro]$ 
+[ec2-user@ip-172-31-17-245 mypro]$ git branch -a
+* master
+[ec2-user@ip-172-31-17-245 mypro]$ git push -u origin master 
+Enumerating objects: 5, done.
+Counting objects: 100% (5/5), done.
+Compressing objects: 100% (3/3), done.
+Writing objects: 100% (5/5), 358 bytes | 358.00 KiB/s, done.
+Total 5 (delta 1), reused 0 (delta 0), pack-reused 0
+remote: Resolving deltas: 100% (1/1), done.
+To github.com:devopsepint2021/mypro.git
+ * [new branch]      master -> master
+Branch 'master' set up to track remote branch 'master' from 'origin'.
+[ec2-user@ip-172-31-17-245 mypro]$ 
+[ec2-user@ip-172-31-17-245 mypro]$ 
+[ec2-user@ip-172-31-17-245 mypro]$ 
+[ec2-user@ip-172-31-17-245 mypro]$ 
+[ec2-user@ip-172-31-17-245 mypro]$ 
+[ec2-user@ip-172-31-17-245 mypro]$ 
+[ec2-user@ip-172-31-17-245 mypro]$ git pull
+From github.com:devopsepint2021/mypro
+ * [new branch]      bug100     -> origin/bug100
+ * [new branch]      bug101     -> origin/bug101
+Already up to date.
+[ec2-user@ip-172-31-17-245 mypro]$ 
+[ec2-user@ip-172-31-17-245 mypro]$ 
+[ec2-user@ip-172-31-17-245 mypro]$ git branch -a
+* master
+  remotes/origin/bug100
+  remotes/origin/bug101
+  remotes/origin/master
+[ec2-user@ip-172-31-17-245 mypro]$ git checkout bug100
+Branch 'bug100' set up to track remote branch 'bug100' from 'origin'.
+Switched to a new branch 'bug100'
+[ec2-user@ip-172-31-17-245 mypro]$ 
+[ec2-user@ip-172-31-17-245 mypro]$ 
+[ec2-user@ip-172-31-17-245 mypro]$ 
+[ec2-user@ip-172-31-17-245 mypro]$ ls -ltr
+total 0
+-rw-rw-r-- 1 ec2-user ec2-user 0 Sep 18 15:24 f2
+-rw-rw-r-- 1 ec2-user ec2-user 0 Sep 18 15:24 f1
+[ec2-user@ip-172-31-17-245 mypro]$ 
+[ec2-user@ip-172-31-17-245 mypro]$ 
+[ec2-user@ip-172-31-17-245 mypro]$ 
+[ec2-user@ip-172-31-17-245 mypro]$ git log
+commit 973a98441e4182f5354dbd17d16a1d51f61625fb (HEAD -> bug100, origin/master, origin/bug101, origin/bug100, master)
+Author: devopsepint2021 <devopsepint2021@itopstube.com>
+Date:   Sat Sep 18 15:24:53 2021 +0000
+
+    a2
+
+commit 8b2e54dd8b910e3d3172500fd61f859b28b1bff5
+Author: devopsepint2021 <devopsepint2021@itopstube.com>
+Date:   Sat Sep 18 15:24:41 2021 +0000
+
+    a1
+[ec2-user@ip-172-31-17-245 mypro]$ ls -ltr
+total 0
+-rw-rw-r-- 1 ec2-user ec2-user 0 Sep 18 15:24 f2
+-rw-rw-r-- 1 ec2-user ec2-user 0 Sep 18 15:24 f1
+[ec2-user@ip-172-31-17-245 mypro]$ touch f3 f4 f5
+[ec2-user@ip-172-31-17-245 mypro]$ git add f3
+[ec2-user@ip-172-31-17-245 mypro]$ git commit -m "b1"
+[bug100 4d5a1f0] b1
+ 1 file changed, 0 insertions(+), 0 deletions(-)
+ create mode 100644 f3
+[ec2-user@ip-172-31-17-245 mypro]$ git add f4
+[ec2-user@ip-172-31-17-245 mypro]$ git commit -m "b2"
+[bug100 8699251] b2
+ 1 file changed, 0 insertions(+), 0 deletions(-)
+ create mode 100644 f4
+[ec2-user@ip-172-31-17-245 mypro]$ git add f5
+[ec2-user@ip-172-31-17-245 mypro]$ git commit -m "b3"
+[bug100 0f0b834] b3
+ 1 file changed, 0 insertions(+), 0 deletions(-)
+ create mode 100644 f5
+[ec2-user@ip-172-31-17-245 mypro]$ 
+[ec2-user@ip-172-31-17-245 mypro]$ 
+[ec2-user@ip-172-31-17-245 mypro]$ git log
+commit 0f0b834171f1ea7d2eabf165d3ce6d781e031e24 (HEAD -> bug100)
+Author: devopsepint2021 <devopsepint2021@itopstube.com>
+Date:   Sat Sep 18 15:29:21 2021 +0000
+
+    b3
+
+commit 8699251e98f40b5a8c7282b524480e600f44f971
+Author: devopsepint2021 <devopsepint2021@itopstube.com>
+Date:   Sat Sep 18 15:29:14 2021 +0000
+
+    b2
+
+commit 4d5a1f0a1eab063414e57df0c6e4c5421a187792
+Author: devopsepint2021 <devopsepint2021@itopstube.com>
+Date:   Sat Sep 18 15:29:06 2021 +0000
+
+    b1
+
+commit 973a98441e4182f5354dbd17d16a1d51f61625fb (origin/master, origin/bug101, origin/bug100, master)
+Author: devopsepint2021 <devopsepint2021@itopstube.com>
+Date:   Sat Sep 18 15:24:53 2021 +0000
+
+    a2
+
+commit 8b2e54dd8b910e3d3172500fd61f859b28b1bff5
+Author: devopsepint2021 <devopsepint2021@itopstube.com>
+Date:   Sat Sep 18 15:24:41 2021 +0000
+
+    a1
+
+[ec2-user@ip-172-31-17-245 mypro]$ 
+[ec2-user@ip-172-31-17-245 mypro]$ 
+[ec2-user@ip-172-31-17-245 mypro]$ 
+[ec2-user@ip-172-31-17-245 mypro]$ 
+[ec2-user@ip-172-31-17-245 mypro]$ 
+[ec2-user@ip-172-31-17-245 mypro]$ git push
+Enumerating objects: 7, done.
+Counting objects: 100% (7/7), done.
+Compressing objects: 100% (6/6), done.
+Writing objects: 100% (6/6), 557 bytes | 557.00 KiB/s, done.
+Total 6 (delta 2), reused 0 (delta 0), pack-reused 0
+remote: Resolving deltas: 100% (2/2), done.
+To github.com:devopsepint2021/mypro.git
+   973a984..0f0b834  bug100 -> bug100
+[ec2-user@ip-172-31-17-245 mypro]$ 
+[ec2-user@ip-172-31-17-245 mypro]$ 
+[ec2-user@ip-172-31-17-245 mypro]$ 
+[ec2-user@ip-172-31-17-245 mypro]$ 
+[ec2-user@ip-172-31-17-245 mypro]$ 
+[ec2-user@ip-172-31-17-245 mypro]$ 
+[ec2-user@ip-172-31-17-245 mypro]$ git checkout master 
+Switched to branch 'master'
+Your branch is up to date with 'origin/master'.
+[ec2-user@ip-172-31-17-245 mypro]$ 
+[ec2-user@ip-172-31-17-245 mypro]$ 
+[ec2-user@ip-172-31-17-245 mypro]$ 
+[ec2-user@ip-172-31-17-245 mypro]$ git pull
+remote: Enumerating objects: 1, done.
+remote: Counting objects: 100% (1/1), done.
+remote: Total 1 (delta 0), reused 0 (delta 0), pack-reused 0
+Unpacking objects: 100% (1/1), 627 bytes | 627.00 KiB/s, done.
+From github.com:devopsepint2021/mypro
+   973a984..49a9e27  master     -> origin/master
+Updating 973a984..49a9e27
+Fast-forward
+ f3 | 0
+ f4 | 0
+ f5 | 0
+ 3 files changed, 0 insertions(+), 0 deletions(-)
+ create mode 100644 f3
+ create mode 100644 f4
+ create mode 100644 f5
+[ec2-user@ip-172-31-17-245 mypro]$ ls -ltr
+total 0
+-rw-rw-r-- 1 ec2-user ec2-user 0 Sep 18 15:24 f2
+-rw-rw-r-- 1 ec2-user ec2-user 0 Sep 18 15:24 f1
+-rw-rw-r-- 1 ec2-user ec2-user 0 Sep 18 15:32 f5
+-rw-rw-r-- 1 ec2-user ec2-user 0 Sep 18 15:32 f4
+-rw-rw-r-- 1 ec2-user ec2-user 0 Sep 18 15:32 f3
+[ec2-user@ip-172-31-17-245 mypro]$ git branch -a
+  bug100
+* master
+  remotes/origin/bug100
+  remotes/origin/bug101
+  remotes/origin/master
+[ec2-user@ip-172-31-17-245 mypro]$ git checkout bug101
+Branch 'bug101' set up to track remote branch 'bug101' from 'origin'.
+Switched to a new branch 'bug101'
+[ec2-user@ip-172-31-17-245 mypro]$ 
+[ec2-user@ip-172-31-17-245 mypro]$ 
+[ec2-user@ip-172-31-17-245 mypro]$ 
+[ec2-user@ip-172-31-17-245 mypro]$ ls -ltr
+total 0
+-rw-rw-r-- 1 ec2-user ec2-user 0 Sep 18 15:24 f2
+-rw-rw-r-- 1 ec2-user ec2-user 0 Sep 18 15:24 f1
+[ec2-user@ip-172-31-17-245 mypro]$ ls -ltr
+total 0
+-rw-rw-r-- 1 ec2-user ec2-user 0 Sep 18 15:24 f2
+-rw-rw-r-- 1 ec2-user ec2-user 0 Sep 18 15:24 f1
+[ec2-user@ip-172-31-17-245 mypro]$ touch f6 f7 f8
+[ec2-user@ip-172-31-17-245 mypro]$ l s-ltr
+-bash: l: command not found
+[ec2-user@ip-172-31-17-245 mypro]$ 
+[ec2-user@ip-172-31-17-245 mypro]$ 
+[ec2-user@ip-172-31-17-245 mypro]$ 
+[ec2-user@ip-172-31-17-245 mypro]$ ls -ltr
+total 0
+-rw-rw-r-- 1 ec2-user ec2-user 0 Sep 18 15:24 f2
+-rw-rw-r-- 1 ec2-user ec2-user 0 Sep 18 15:24 f1
+-rw-rw-r-- 1 ec2-user ec2-user 0 Sep 18 15:34 f8
+-rw-rw-r-- 1 ec2-user ec2-user 0 Sep 18 15:34 f7
+-rw-rw-r-- 1 ec2-user ec2-user 0 Sep 18 15:34 f6
+[ec2-user@ip-172-31-17-245 mypro]$ 
+[ec2-user@ip-172-31-17-245 mypro]$ 
+[ec2-user@ip-172-31-17-245 mypro]$ git add f6
+[ec2-user@ip-172-31-17-245 mypro]$ git commit -m "f6"
+[bug101 5b7095f] f6
+ 1 file changed, 0 insertions(+), 0 deletions(-)
+ create mode 100644 f6
+[ec2-user@ip-172-31-17-245 mypro]$ git add f7
+[ec2-user@ip-172-31-17-245 mypro]$ git commit -m "c2"
+[bug101 337416d] c2
+ 1 file changed, 0 insertions(+), 0 deletions(-)
+ create mode 100644 f7
+[ec2-user@ip-172-31-17-245 mypro]$ git add f8
+[ec2-user@ip-172-31-17-245 mypro]$ git commit -m "c3"
+[bug101 ab749d8] c3
+ 1 file changed, 0 insertions(+), 0 deletions(-)
+ create mode 100644 f8
+[ec2-user@ip-172-31-17-245 mypro]$ 
+[ec2-user@ip-172-31-17-245 mypro]$ 
+[ec2-user@ip-172-31-17-245 mypro]$ git log
+commit ab749d8e435816e16dfe269657cc3efc21fae78d (HEAD -> bug101)
+Author: devopsepint2021 <devopsepint2021@itopstube.com>
+Date:   Sat Sep 18 15:35:09 2021 +0000
+
+    c3
+
+commit 337416df2a6aa20c22d0d09594bb3f0323732101
+Author: devopsepint2021 <devopsepint2021@itopstube.com>
+Date:   Sat Sep 18 15:35:00 2021 +0000
+
+    c2
+
+commit 5b7095f06d70245e381a67524098d8a79fbf4b15
+Author: devopsepint2021 <devopsepint2021@itopstube.com>
+Date:   Sat Sep 18 15:34:39 2021 +0000
+
+    f6
+
+commit 973a98441e4182f5354dbd17d16a1d51f61625fb (origin/bug101)
+Author: devopsepint2021 <devopsepint2021@itopstube.com>
+Date:   Sat Sep 18 15:24:53 2021 +0000
+
+    a2
+
+commit 8b2e54dd8b910e3d3172500fd61f859b28b1bff5
+Author: devopsepint2021 <devopsepint2021@itopstube.com>
+Date:   Sat Sep 18 15:24:41 2021 +0000
+
+    a1
+[ec2-user@ip-172-31-17-245 mypro]$ 
+[ec2-user@ip-172-31-17-245 mypro]$ 
+[ec2-user@ip-172-31-17-245 mypro]$ 
+[ec2-user@ip-172-31-17-245 mypro]$ 
+[ec2-user@ip-172-31-17-245 mypro]$ 
+[ec2-user@ip-172-31-17-245 mypro]$ git push
+Enumerating objects: 7, done.
+Counting objects: 100% (7/7), done.
+Compressing objects: 100% (6/6), done.
+Writing objects: 100% (6/6), 554 bytes | 554.00 KiB/s, done.
+Total 6 (delta 2), reused 0 (delta 0), pack-reused 0
+remote: Resolving deltas: 100% (2/2), done.
+To github.com:devopsepint2021/mypro.git
+   973a984..ab749d8  bug101 -> bug101
+[ec2-user@ip-172-31-17-245 mypro]$ 
+[ec2-user@ip-172-31-17-245 mypro]$ 
+[ec2-user@ip-172-31-17-245 mypro]$ 
+[ec2-user@ip-172-31-17-245 mypro]$ 
+[ec2-user@ip-172-31-17-245 mypro]$ 
+[ec2-user@ip-172-31-17-245 mypro]$ 
+[ec2-user@ip-172-31-17-245 mypro]$ git branch -a
+  bug100
+* bug101
+  master
+  remotes/origin/bug100
+  remotes/origin/bug101
+  remotes/origin/master
+[ec2-user@ip-172-31-17-245 mypro]$ 
+[ec2-user@ip-172-31-17-245 mypro]$ 
+[ec2-user@ip-172-31-17-245 mypro]$ 
+[ec2-user@ip-172-31-17-245 mypro]$ git pull
+Already up to date.
+[ec2-user@ip-172-31-17-245 mypro]$ git rebase master
+Successfully rebased and updated refs/heads/bug101.
+[ec2-user@ip-172-31-17-245 mypro]$ 
+[ec2-user@ip-172-31-17-245 mypro]$ 
+[ec2-user@ip-172-31-17-245 mypro]$ ls -ltr
+total 0
+-rw-rw-r-- 1 ec2-user ec2-user 0 Sep 18 15:24 f2
+-rw-rw-r-- 1 ec2-user ec2-user 0 Sep 18 15:24 f1
+-rw-rw-r-- 1 ec2-user ec2-user 0 Sep 18 15:38 f6
+-rw-rw-r-- 1 ec2-user ec2-user 0 Sep 18 15:38 f5
+-rw-rw-r-- 1 ec2-user ec2-user 0 Sep 18 15:38 f4
+-rw-rw-r-- 1 ec2-user ec2-user 0 Sep 18 15:38 f3
+-rw-rw-r-- 1 ec2-user ec2-user 0 Sep 18 15:38 f8
+-rw-rw-r-- 1 ec2-user ec2-user 0 Sep 18 15:38 f7
+[ec2-user@ip-172-31-17-245 mypro]$ 
+[ec2-user@ip-172-31-17-245 mypro]$ 
+[ec2-user@ip-172-31-17-245 mypro]$ 
+[ec2-user@ip-172-31-17-245 mypro]$ 
+[ec2-user@ip-172-31-17-245 mypro]$ 
+[ec2-user@ip-172-31-17-245 mypro]$ 
+[ec2-user@ip-172-31-17-245 mypro]$ git checkout master 
+Switched to branch 'master'
+Your branch is up to date with 'origin/master'.
+[ec2-user@ip-172-31-17-245 mypro]$ 
+[ec2-user@ip-172-31-17-245 mypro]$ 
+[ec2-user@ip-172-31-17-245 mypro]$ git pull
+remote: Enumerating objects: 7, done.
+remote: Counting objects: 100% (7/7), done.
+remote: Compressing objects: 100% (6/6), done.
+remote: Total 6 (delta 3), reused 0 (delta 0), pack-reused 0
+Unpacking objects: 100% (6/6), 632 bytes | 632.00 KiB/s, done.
+From github.com:devopsepint2021/mypro
+   49a9e27..5107f64  master     -> origin/master
+Updating 49a9e27..5107f64
+Fast-forward
+ f6 | 0
+ f7 | 0
+ f8 | 0
+ 3 files changed, 0 insertions(+), 0 deletions(-)
+ create mode 100644 f6
+ create mode 100644 f7
+ create mode 100644 f8
+[ec2-user@ip-172-31-17-245 mypro]$ 
+[ec2-user@ip-172-31-17-245 mypro]$ 
+[ec2-user@ip-172-31-17-245 mypro]$ 
+[ec2-user@ip-172-31-17-245 mypro]$ 
+[ec2-user@ip-172-31-17-245 mypro]$ 
+[ec2-user@ip-172-31-17-245 mypro]$ 
+[ec2-user@ip-172-31-17-245 mypro]$ 
+[ec2-user@ip-172-31-17-245 mypro]$ 
+[ec2-user@ip-172-31-17-245 mypro]$ 
+[ec2-user@ip-172-31-17-245 mypro]$ 
+[ec2-user@ip-172-31-17-245 mypro]$ 
+[ec2-user@ip-172-31-17-245 mypro]$ 
+[ec2-user@ip-172-31-17-245 mypro]$ 
+[ec2-user@ip-172-31-17-245 mypro]$ 
+[ec2-user@ip-172-31-17-245 mypro]$ 
+[ec2-user@ip-172-31-17-245 mypro]$ 
+[ec2-user@ip-172-31-17-245 mypro]$ 
+[ec2-user@ip-172-31-17-245 mypro]$ 
+[ec2-user@ip-172-31-17-245 mypro]$ 
+[ec2-user@ip-172-31-17-245 mypro]$ git branch -a
+  bug100
+  bug101
+* master
+  remotes/origin/bug100
+  remotes/origin/bug101
+  remotes/origin/master
+[ec2-user@ip-172-31-17-245 mypro]$ 
+[ec2-user@ip-172-31-17-245 mypro]$ 
+[ec2-user@ip-172-31-17-245 mypro]$ 
+[ec2-user@ip-172-31-17-245 mypro]$ 
+[ec2-user@ip-172-31-17-245 mypro]$ git pull
+Already up to date.
+[ec2-user@ip-172-31-17-245 mypro]$ 
+[ec2-user@ip-172-31-17-245 mypro]$ 
+[ec2-user@ip-172-31-17-245 mypro]$ 
+[ec2-user@ip-172-31-17-245 mypro]$ 
+[ec2-user@ip-172-31-17-245 mypro]$ 
+[ec2-user@ip-172-31-17-245 mypro]$ 
+[ec2-user@ip-172-31-17-245 mypro]$ 
+[ec2-user@ip-172-31-17-245 mypro]$ 
+[ec2-user@ip-172-31-17-245 mypro]$ 
+[ec2-user@ip-172-31-17-245 mypro]$ 
+[ec2-user@ip-172-31-17-245 mypro]$ 
+[ec2-user@ip-172-31-17-245 mypro]$ 
+[ec2-user@ip-172-31-17-245 mypro]$ 
+[ec2-user@ip-172-31-17-245 mypro]$ 
+[ec2-user@ip-172-31-17-245 mypro]$ git branch -a
+  bug100
+  bug101
+* master
+  remotes/origin/bug100
+  remotes/origin/bug101
+  remotes/origin/master
+[ec2-user@ip-172-31-17-245 mypro]$ 
+[ec2-user@ip-172-31-17-245 mypro]$ 
+[ec2-user@ip-172-31-17-245 mypro]$ git pull
+remote: Enumerating objects: 6, done.
+remote: Counting objects: 100% (6/6), done.
+remote: Compressing objects: 100% (3/3), done.
+remote: Total 4 (delta 1), reused 0 (delta 0), pack-reused 0
+Unpacking objects: 100% (4/4), 1.23 KiB | 1.23 MiB/s, done.
+From github.com:devopsepint2021/mypro
+   5107f64..09e5170  master     -> origin/master
+ * [new branch]      bug102     -> origin/bug102
+ * [new branch]      bug103     -> origin/bug103
+Updating 5107f64..09e5170
+Fast-forward
+ f1 | 1 +
+ 1 file changed, 1 insertion(+)
+[ec2-user@ip-172-31-17-245 mypro]$ git chekcout bug103
+git: 'chekcout' is not a git command. See 'git --help'.
+
+The most similar command is
+	checkout
+[ec2-user@ip-172-31-17-245 mypro]$ git checkout bug103
+Branch 'bug103' set up to track remote branch 'bug103' from 'origin'.
+Switched to a new branch 'bug103'
+[ec2-user@ip-172-31-17-245 mypro]$ 
+[ec2-user@ip-172-31-17-245 mypro]$ 
+[ec2-user@ip-172-31-17-245 mypro]$ 
+[ec2-user@ip-172-31-17-245 mypro]$ git pull
+Already up to date.
+[ec2-user@ip-172-31-17-245 mypro]$ 
+[ec2-user@ip-172-31-17-245 mypro]$ 
+[ec2-user@ip-172-31-17-245 mypro]$ 
+[ec2-user@ip-172-31-17-245 mypro]$ ls -ltr
+total 0
+-rw-rw-r-- 1 ec2-user ec2-user 0 Sep 18 15:24 f2
+-rw-rw-r-- 1 ec2-user ec2-user 0 Sep 18 15:38 f5
+-rw-rw-r-- 1 ec2-user ec2-user 0 Sep 18 15:38 f4
+-rw-rw-r-- 1 ec2-user ec2-user 0 Sep 18 15:38 f3
+-rw-rw-r-- 1 ec2-user ec2-user 0 Sep 18 15:42 f8
+-rw-rw-r-- 1 ec2-user ec2-user 0 Sep 18 15:42 f7
+-rw-rw-r-- 1 ec2-user ec2-user 0 Sep 18 15:42 f6
+-rw-rw-r-- 1 ec2-user ec2-user 0 Sep 18 15:53 f1
+[ec2-user@ip-172-31-17-245 mypro]$ 
+[ec2-user@ip-172-31-17-245 mypro]$ 
+[ec2-user@ip-172-31-17-245 mypro]$ 
+[ec2-user@ip-172-31-17-245 mypro]$ 
+[ec2-user@ip-172-31-17-245 mypro]$ 
+[ec2-user@ip-172-31-17-245 mypro]$ ls -ltr
+total 0
+-rw-rw-r-- 1 ec2-user ec2-user 0 Sep 18 15:24 f2
+-rw-rw-r-- 1 ec2-user ec2-user 0 Sep 18 15:38 f5
+-rw-rw-r-- 1 ec2-user ec2-user 0 Sep 18 15:38 f4
+-rw-rw-r-- 1 ec2-user ec2-user 0 Sep 18 15:38 f3
+-rw-rw-r-- 1 ec2-user ec2-user 0 Sep 18 15:42 f8
+-rw-rw-r-- 1 ec2-user ec2-user 0 Sep 18 15:42 f7
+-rw-rw-r-- 1 ec2-user ec2-user 0 Sep 18 15:42 f6
+-rw-rw-r-- 1 ec2-user ec2-user 0 Sep 18 15:53 f1
+[ec2-user@ip-172-31-17-245 mypro]$ 
+[ec2-user@ip-172-31-17-245 mypro]$ 
+[ec2-user@ip-172-31-17-245 mypro]$ 
+[ec2-user@ip-172-31-17-245 mypro]$ vi f2
+[ec2-user@ip-172-31-17-245 mypro]$ 
+[ec2-user@ip-172-31-17-245 mypro]$ 
+[ec2-user@ip-172-31-17-245 mypro]$ git add f2
+[ec2-user@ip-172-31-17-245 mypro]$ git commit -m "bug103 fixed"
+[bug103 23a143d] bug103 fixed
+ 1 file changed, 1 insertion(+)
+[ec2-user@ip-172-31-17-245 mypro]$ 
+[ec2-user@ip-172-31-17-245 mypro]$ 
+[ec2-user@ip-172-31-17-245 mypro]$ 
+[ec2-user@ip-172-31-17-245 mypro]$ 
+[ec2-user@ip-172-31-17-245 mypro]$ 
+[ec2-user@ip-172-31-17-245 mypro]$ git push
+Enumerating objects: 5, done.
+Counting objects: 100% (5/5), done.
+Compressing objects: 100% (2/2), done.
+Writing objects: 100% (3/3), 265 bytes | 265.00 KiB/s, done.
+Total 3 (delta 1), reused 0 (delta 0), pack-reused 0
+remote: Resolving deltas: 100% (1/1), completed with 1 local object.
+To github.com:devopsepint2021/mypro.git
+   5107f64..23a143d  bug103 -> bug103
+[ec2-user@ip-172-31-17-245 mypro]$ 
+[ec2-user@ip-172-31-17-245 mypro]$ 
+[ec2-user@ip-172-31-17-245 mypro]$ 
+[ec2-user@ip-172-31-17-245 mypro]$ 
+[ec2-user@ip-172-31-17-245 mypro]$ 
+[ec2-user@ip-172-31-17-245 mypro]$ 
+[ec2-user@ip-172-31-17-245 mypro]$ 
+[ec2-user@ip-172-31-17-245 mypro]$ git rebase master
+Successfully rebased and updated refs/heads/bug103.
+[ec2-user@ip-172-31-17-245 mypro]$ 
+[ec2-user@ip-172-31-17-245 mypro]$ 
+[ec2-user@ip-172-31-17-245 mypro]$ 
+[ec2-user@ip-172-31-17-245 mypro]$ 
+[ec2-user@ip-172-31-17-245 mypro]$ 
+[ec2-user@ip-172-31-17-245 mypro]$ ls -ltr
+total 8
+-rw-rw-r-- 1 ec2-user ec2-user  0 Sep 18 15:38 f5
+-rw-rw-r-- 1 ec2-user ec2-user  0 Sep 18 15:38 f4
+-rw-rw-r-- 1 ec2-user ec2-user  0 Sep 18 15:38 f3
+-rw-rw-r-- 1 ec2-user ec2-user  0 Sep 18 15:42 f8
+-rw-rw-r-- 1 ec2-user ec2-user  0 Sep 18 15:42 f7
+-rw-rw-r-- 1 ec2-user ec2-user  0 Sep 18 15:42 f6
+-rw-rw-r-- 1 ec2-user ec2-user 12 Sep 18 15:55 f1
+-rw-rw-r-- 1 ec2-user ec2-user  9 Sep 18 15:55 f2
+[ec2-user@ip-172-31-17-245 mypro]$ cat f1
+this is f1
+[ec2-user@ip-172-31-17-245 mypro]$ 
+[ec2-user@ip-172-31-17-245 mypro]$ 
+[ec2-user@ip-172-31-17-245 mypro]$ 
+[ec2-user@ip-172-31-17-245 mypro]$ git checkout master 
+Switched to branch 'master'
+Your branch is up to date with 'origin/master'.
+[ec2-user@ip-172-31-17-245 mypro]$ 
+[ec2-user@ip-172-31-17-245 mypro]$ 
+[ec2-user@ip-172-31-17-245 mypro]$ 
+[ec2-user@ip-172-31-17-245 mypro]$ git merge bug103
+Updating 09e5170..5ea35da
+Fast-forward
+ f2 | 1 +
+ 1 file changed, 1 insertion(+)
+[ec2-user@ip-172-31-17-245 mypro]$ 
+[ec2-user@ip-172-31-17-245 mypro]$ 
+[ec2-user@ip-172-31-17-245 mypro]$ ls -ltr
+total 8
+-rw-rw-r-- 1 ec2-user ec2-user  0 Sep 18 15:38 f5
+-rw-rw-r-- 1 ec2-user ec2-user  0 Sep 18 15:38 f4
+-rw-rw-r-- 1 ec2-user ec2-user  0 Sep 18 15:38 f3
+-rw-rw-r-- 1 ec2-user ec2-user  0 Sep 18 15:42 f8
+-rw-rw-r-- 1 ec2-user ec2-user  0 Sep 18 15:42 f7
+-rw-rw-r-- 1 ec2-user ec2-user  0 Sep 18 15:42 f6
+-rw-rw-r-- 1 ec2-user ec2-user 12 Sep 18 15:55 f1
+-rw-rw-r-- 1 ec2-user ec2-user  9 Sep 18 15:56 f2
+[ec2-user@ip-172-31-17-245 mypro]$ git push
+Enumerating objects: 5, done.
+Counting objects: 100% (5/5), done.
+Compressing objects: 100% (2/2), done.
+Writing objects: 100% (3/3), 268 bytes | 268.00 KiB/s, done.
+Total 3 (delta 1), reused 0 (delta 0), pack-reused 0
+remote: Resolving deltas: 100% (1/1), completed with 1 local object.
+To github.com:devopsepint2021/mypro.git
+   09e5170..5ea35da  master -> master
+[ec2-user@ip-172-31-17-245 mypro]$ 
+[ec2-user@ip-172-31-17-245 mypro]$ 
+[ec2-user@ip-172-31-17-245 mypro]$ 
+[ec2-user@ip-172-31-17-245 mypro]$ 
+[ec2-user@ip-172-31-17-245 mypro]$ 
+[ec2-user@ip-172-31-17-245 mypro]$ 
+[ec2-user@ip-172-31-17-245 mypro]$ 
+[ec2-user@ip-172-31-17-245 mypro]$ 
+[ec2-user@ip-172-31-17-245 mypro]$ 
+[ec2-user@ip-172-31-17-245 mypro]$ 
+[ec2-user@ip-172-31-17-245 mypro]$ git branch -a
+  bug100
+  bug101
+  bug103
+* master
+  remotes/origin/bug100
+  remotes/origin/bug101
+  remotes/origin/bug102
+  remotes/origin/bug103
+  remotes/origin/master
+[ec2-user@ip-172-31-17-245 mypro]$ 
+[ec2-user@ip-172-31-17-245 mypro]$ 
+[ec2-user@ip-172-31-17-245 mypro]$ 
+[ec2-user@ip-172-31-17-245 mypro]$ git pull
+Already up to date.
+[ec2-user@ip-172-31-17-245 mypro]$ 
+[ec2-user@ip-172-31-17-245 mypro]$ 
+[ec2-user@ip-172-31-17-245 mypro]$ 
+[ec2-user@ip-172-31-17-245 mypro]$ git checkout -b enc1
+Switched to a new branch 'enc1'
+[ec2-user@ip-172-31-17-245 mypro]$ 
+[ec2-user@ip-172-31-17-245 mypro]$ 
+[ec2-user@ip-172-31-17-245 mypro]$ 
+[ec2-user@ip-172-31-17-245 mypro]$ git branch -a
+  bug100
+  bug101
+  bug103
+* enc1
+  master
+  remotes/origin/bug100
+  remotes/origin/bug101
+  remotes/origin/bug102
+  remotes/origin/bug103
+  remotes/origin/master
+[ec2-user@ip-172-31-17-245 mypro]$ 
+[ec2-user@ip-172-31-17-245 mypro]$ 
+[ec2-user@ip-172-31-17-245 mypro]$ 
+[ec2-user@ip-172-31-17-245 mypro]$ mkdir dir1
+[ec2-user@ip-172-31-17-245 mypro]$ touch dir1/g{1..5}
+[ec2-user@ip-172-31-17-245 mypro]$ 
+[ec2-user@ip-172-31-17-245 mypro]$ 
+[ec2-user@ip-172-31-17-245 mypro]$ ls -ltr dir1/
+total 0
+-rw-rw-r-- 1 ec2-user ec2-user 0 Sep 18 15:59 g5
+-rw-rw-r-- 1 ec2-user ec2-user 0 Sep 18 15:59 g4
+-rw-rw-r-- 1 ec2-user ec2-user 0 Sep 18 15:59 g3
+-rw-rw-r-- 1 ec2-user ec2-user 0 Sep 18 15:59 g2
+-rw-rw-r-- 1 ec2-user ec2-user 0 Sep 18 15:59 g1
+[ec2-user@ip-172-31-17-245 mypro]$ 
+[ec2-user@ip-172-31-17-245 mypro]$ 
+[ec2-user@ip-172-31-17-245 mypro]$ 
+[ec2-user@ip-172-31-17-245 mypro]$ git add dir1/g1
+[ec2-user@ip-172-31-17-245 mypro]$ git commit -m "g1"
+[enc1 8c41ff2] g1
+ 1 file changed, 0 insertions(+), 0 deletions(-)
+ create mode 100644 dir1/g1
+[ec2-user@ip-172-31-17-245 mypro]$ git add dir1/g2
+[ec2-user@ip-172-31-17-245 mypro]$ git commit -m "g2"
+[enc1 2bc545f] g2
+ 1 file changed, 0 insertions(+), 0 deletions(-)
+ create mode 100644 dir1/g2
+[ec2-user@ip-172-31-17-245 mypro]$ git add dir1/g3
+[ec2-user@ip-172-31-17-245 mypro]$ git commit -m "g3"
+[enc1 aa5a0d3] g3
+ 1 file changed, 0 insertions(+), 0 deletions(-)
+ create mode 100644 dir1/g3
+[ec2-user@ip-172-31-17-245 mypro]$ git add dir1/g34
+fatal: pathspec 'dir1/g34' did not match any files
+[ec2-user@ip-172-31-17-245 mypro]$ git add dir1/g4
+[ec2-user@ip-172-31-17-245 mypro]$ git commit -m "g4"
+[enc1 03a202a] g4
+ 1 file changed, 0 insertions(+), 0 deletions(-)
+ create mode 100644 dir1/g4
+[ec2-user@ip-172-31-17-245 mypro]$ git add dir1/g5
+[ec2-user@ip-172-31-17-245 mypro]$ git commit -m "g5"
+[enc1 b588de2] g5
+ 1 file changed, 0 insertions(+), 0 deletions(-)
+ create mode 100644 dir1/g5
+[ec2-user@ip-172-31-17-245 mypro]$ 
+[ec2-user@ip-172-31-17-245 mypro]$ 
+[ec2-user@ip-172-31-17-245 mypro]$ 
+[ec2-user@ip-172-31-17-245 mypro]$ 
+[ec2-user@ip-172-31-17-245 mypro]$ 
+[ec2-user@ip-172-31-17-245 mypro]$ 
+[ec2-user@ip-172-31-17-245 mypro]$ 
+[ec2-user@ip-172-31-17-245 mypro]$ ls -ltr
+total 8
+-rw-rw-r-- 1 ec2-user ec2-user  0 Sep 18 15:38 f5
+-rw-rw-r-- 1 ec2-user ec2-user  0 Sep 18 15:38 f4
+-rw-rw-r-- 1 ec2-user ec2-user  0 Sep 18 15:38 f3
+-rw-rw-r-- 1 ec2-user ec2-user  0 Sep 18 15:42 f8
+-rw-rw-r-- 1 ec2-user ec2-user  0 Sep 18 15:42 f7
+-rw-rw-r-- 1 ec2-user ec2-user  0 Sep 18 15:42 f6
+-rw-rw-r-- 1 ec2-user ec2-user 12 Sep 18 15:55 f1
+-rw-rw-r-- 1 ec2-user ec2-user  9 Sep 18 15:56 f2
+drwxrwxr-x 2 ec2-user ec2-user 56 Sep 18 15:59 dir1
+[ec2-user@ip-172-31-17-245 mypro]$ 
+[ec2-user@ip-172-31-17-245 mypro]$ 
+[ec2-user@ip-172-31-17-245 mypro]$ 
+[ec2-user@ip-172-31-17-245 mypro]$ l s-ltr
+-bash: l: command not found
+[ec2-user@ip-172-31-17-245 mypro]$ 
+[ec2-user@ip-172-31-17-245 mypro]$ 
+[ec2-user@ip-172-31-17-245 mypro]$ 
+[ec2-user@ip-172-31-17-245 mypro]$ git push -u origin enc1
+Enumerating objects: 16, done.
+Counting objects: 100% (16/16), done.
+Compressing objects: 100% (14/14), done.
+Writing objects: 100% (15/15), 1.21 KiB | 1.21 MiB/s, done.
+Total 15 (delta 8), reused 0 (delta 0), pack-reused 0
+remote: Resolving deltas: 100% (8/8), completed with 1 local object.
+remote: 
+remote: Create a pull request for 'enc1' on GitHub by visiting:
+remote:      https://github.com/devopsepint2021/mypro/pull/new/enc1
+remote: 
+To github.com:devopsepint2021/mypro.git
+ * [new branch]      enc1 -> enc1
+Branch 'enc1' set up to track remote branch 'enc1' from 'origin'.
+[ec2-user@ip-172-31-17-245 mypro]$ 
+[ec2-user@ip-172-31-17-245 mypro]$ 
+[ec2-user@ip-172-31-17-245 mypro]$ 
+[ec2-user@ip-172-31-17-245 mypro]$ 
+[ec2-user@ip-172-31-17-245 mypro]$ 
+[ec2-user@ip-172-31-17-245 mypro]$ 
+[ec2-user@ip-172-31-17-245 mypro]$ 
+[ec2-user@ip-172-31-17-245 mypro]$ 
+[ec2-user@ip-172-31-17-245 mypro]$ git checkout master 
+Switched to branch 'master'
+Your branch is up to date with 'origin/master'.
+[ec2-user@ip-172-31-17-245 mypro]$ 
+[ec2-user@ip-172-31-17-245 mypro]$ 
+[ec2-user@ip-172-31-17-245 mypro]$ 
+[ec2-user@ip-172-31-17-245 mypro]$ git pull
+remote: Enumerating objects: 4, done.
+remote: Counting objects: 100% (4/4), done.
+remote: Compressing objects: 100% (2/2), done.
+remote: Total 3 (delta 1), reused 2 (delta 1), pack-reused 0
+Unpacking objects: 100% (3/3), 710 bytes | 710.00 KiB/s, done.
+From github.com:devopsepint2021/mypro
+   5ea35da..2d3a9e0  master     -> origin/master
+Updating 5ea35da..2d3a9e0
+Fast-forward
+ dir1/g1 | 0
+ dir1/g2 | 0
+ dir1/g3 | 0
+ dir1/g4 | 0
+ dir1/g5 | 0
+ 5 files changed, 0 insertions(+), 0 deletions(-)
+ create mode 100644 dir1/g1
+ create mode 100644 dir1/g2
+ create mode 100644 dir1/g3
+ create mode 100644 dir1/g4
+ create mode 100644 dir1/g5
+[ec2-user@ip-172-31-17-245 mypro]$ 
+[ec2-user@ip-172-31-17-245 mypro]$ 
+[ec2-user@ip-172-31-17-245 mypro]$ 
+[ec2-user@ip-172-31-17-245 mypro]$ 
+[ec2-user@ip-172-31-17-245 mypro]$ 
+[ec2-user@ip-172-31-17-245 mypro]$ 
+[ec2-user@ip-172-31-17-245 mypro]$ 
+[ec2-user@ip-172-31-17-245 mypro]$ 
+[ec2-user@ip-172-31-17-245 mypro]$ 
+[ec2-user@ip-172-31-17-245 mypro]$ 
+[ec2-user@ip-172-31-17-245 mypro]$ 
+[ec2-user@ip-172-31-17-245 mypro]$ 
+[ec2-user@ip-172-31-17-245 mypro]$ 
+[ec2-user@ip-172-31-17-245 mypro]$ ls -ltr
+total 8
+-rw-rw-r-- 1 ec2-user ec2-user  0 Sep 18 15:38 f5
+-rw-rw-r-- 1 ec2-user ec2-user  0 Sep 18 15:38 f4
+-rw-rw-r-- 1 ec2-user ec2-user  0 Sep 18 15:38 f3
+-rw-rw-r-- 1 ec2-user ec2-user  0 Sep 18 15:42 f8
+-rw-rw-r-- 1 ec2-user ec2-user  0 Sep 18 15:42 f7
+-rw-rw-r-- 1 ec2-user ec2-user  0 Sep 18 15:42 f6
+-rw-rw-r-- 1 ec2-user ec2-user 12 Sep 18 15:55 f1
+-rw-rw-r-- 1 ec2-user ec2-user  9 Sep 18 15:56 f2
+drwxrwxr-x 2 ec2-user ec2-user 56 Sep 18 16:06 dir1
+[ec2-user@ip-172-31-17-245 mypro]$ 
+[ec2-user@ip-172-31-17-245 mypro]$ 
+[ec2-user@ip-172-31-17-245 mypro]$ git checkout -b enc2
+Switched to a new branch 'enc2'
+[ec2-user@ip-172-31-17-245 mypro]$ 
+[ec2-user@ip-172-31-17-245 mypro]$ 
+[ec2-user@ip-172-31-17-245 mypro]$ 
+[ec2-user@ip-172-31-17-245 mypro]$ touch a{1..5}
+[ec2-user@ip-172-31-17-245 mypro]$ ls -ltr
+total 8
+-rw-rw-r-- 1 ec2-user ec2-user  0 Sep 18 15:38 f5
+-rw-rw-r-- 1 ec2-user ec2-user  0 Sep 18 15:38 f4
+-rw-rw-r-- 1 ec2-user ec2-user  0 Sep 18 15:38 f3
+-rw-rw-r-- 1 ec2-user ec2-user  0 Sep 18 15:42 f8
+-rw-rw-r-- 1 ec2-user ec2-user  0 Sep 18 15:42 f7
+-rw-rw-r-- 1 ec2-user ec2-user  0 Sep 18 15:42 f6
+-rw-rw-r-- 1 ec2-user ec2-user 12 Sep 18 15:55 f1
+-rw-rw-r-- 1 ec2-user ec2-user  9 Sep 18 15:56 f2
+drwxrwxr-x 2 ec2-user ec2-user 56 Sep 18 16:06 dir1
+-rw-rw-r-- 1 ec2-user ec2-user  0 Sep 18 16:07 a5
+-rw-rw-r-- 1 ec2-user ec2-user  0 Sep 18 16:07 a4
+-rw-rw-r-- 1 ec2-user ec2-user  0 Sep 18 16:07 a3
+-rw-rw-r-- 1 ec2-user ec2-user  0 Sep 18 16:07 a2
+-rw-rw-r-- 1 ec2-user ec2-user  0 Sep 18 16:07 a1
+[ec2-user@ip-172-31-17-245 mypro]$ git add a1
+[ec2-user@ip-172-31-17-245 mypro]$ git commit -m "a1"
+[enc2 c48f915] a1
+ 1 file changed, 0 insertions(+), 0 deletions(-)
+ create mode 100644 a1
+[ec2-user@ip-172-31-17-245 mypro]$ git add a2
+[ec2-user@ip-172-31-17-245 mypro]$ git commit -m "a2"
+[enc2 dfbe5bf] a2
+ 1 file changed, 0 insertions(+), 0 deletions(-)
+ create mode 100644 a2
+[ec2-user@ip-172-31-17-245 mypro]$ git add a3
+[ec2-user@ip-172-31-17-245 mypro]$ git commit -m "a3"
+[enc2 85249be] a3
+ 1 file changed, 0 insertions(+), 0 deletions(-)
+ create mode 100644 a3
+[ec2-user@ip-172-31-17-245 mypro]$ git add a4
+[ec2-user@ip-172-31-17-245 mypro]$ 
+[ec2-user@ip-172-31-17-245 mypro]$ git commit -m "a5"
+[enc2 3979439] a5
+ 1 file changed, 0 insertions(+), 0 deletions(-)
+ create mode 100644 a4
+[ec2-user@ip-172-31-17-245 mypro]$ git add a5
+[ec2-user@ip-172-31-17-245 mypro]$ git commit -m "a6"
+[enc2 a8de8f8] a6
+ 1 file changed, 0 insertions(+), 0 deletions(-)
+ create mode 100644 a5
+[ec2-user@ip-172-31-17-245 mypro]$ 
+[ec2-user@ip-172-31-17-245 mypro]$ 
+[ec2-user@ip-172-31-17-245 mypro]$ 
+[ec2-user@ip-172-31-17-245 mypro]$ 
+[ec2-user@ip-172-31-17-245 mypro]$ 
+[ec2-user@ip-172-31-17-245 mypro]$ 
+[ec2-user@ip-172-31-17-245 mypro]$ git status
+On branch enc2
+nothing to commit, working tree clean
+[ec2-user@ip-172-31-17-245 mypro]$ 
+[ec2-user@ip-172-31-17-245 mypro]$ 
+[ec2-user@ip-172-31-17-245 mypro]$ 
+[ec2-user@ip-172-31-17-245 mypro]$ 
+[ec2-user@ip-172-31-17-245 mypro]$ git push -u origin enc2
+Enumerating objects: 11, done.
+Counting objects: 100% (11/11), done.
+Compressing objects: 100% (10/10), done.
+Writing objects: 100% (10/10), 906 bytes | 906.00 KiB/s, done.
+Total 10 (delta 5), reused 0 (delta 0), pack-reused 0
+remote: Resolving deltas: 100% (5/5), completed with 1 local object.
+remote: 
+remote: Create a pull request for 'enc2' on GitHub by visiting:
+remote:      https://github.com/devopsepint2021/mypro/pull/new/enc2
+remote: 
+To github.com:devopsepint2021/mypro.git
+ * [new branch]      enc2 -> enc2
+Branch 'enc2' set up to track remote branch 'enc2' from 'origin'.
+[ec2-user@ip-172-31-17-245 mypro]$ 
+[ec2-user@ip-172-31-17-245 mypro]$ 
+[ec2-user@ip-172-31-17-245 mypro]$ 
+[ec2-user@ip-172-31-17-245 mypro]$ git checkout master 
+Switched to branch 'master'
+Your branch is up to date with 'origin/master'.
+[ec2-user@ip-172-31-17-245 mypro]$ 
+[ec2-user@ip-172-31-17-245 mypro]$ 
+[ec2-user@ip-172-31-17-245 mypro]$ 
+[ec2-user@ip-172-31-17-245 mypro]$ git merge --squash enc2
+Updating 2d3a9e0..a8de8f8
+Fast-forward
+Squash commit -- not updating HEAD
+ a1 | 0
+ a2 | 0
+ a3 | 0
+ a4 | 0
+ a5 | 0
+ 5 files changed, 0 insertions(+), 0 deletions(-)
+ create mode 100644 a1
+ create mode 100644 a2
+ create mode 100644 a3
+ create mode 100644 a4
+ create mode 100644 a5
+
+[ec2-user@ip-172-31-17-245 mypro]$ 
+[ec2-user@ip-172-31-17-245 mypro]$ 
+[ec2-user@ip-172-31-17-245 mypro]$ 
+[ec2-user@ip-172-31-17-245 mypro]$ 
+[ec2-user@ip-172-31-17-245 mypro]$ 
+[ec2-user@ip-172-31-17-245 mypro]$ git status
+On branch master
+Your branch is up to date with 'origin/master'.
+
+Changes to be committed:
+  (use "git restore --staged <file>..." to unstage)
+	new file:   a1
+	new file:   a2
+	new file:   a3
+	new file:   a4
+	new file:   a5
+
+[ec2-user@ip-172-31-17-245 mypro]$ git commit -m "enc2 complted"
+[master fbe8ac3] enc2 complted
+ 5 files changed, 0 insertions(+), 0 deletions(-)
+ create mode 100644 a1
+ create mode 100644 a2
+ create mode 100644 a3
+ create mode 100644 a4
+ create mode 100644 a5
+[ec2-user@ip-172-31-17-245 mypro]$ git push
+Enumerating objects: 3, done.
+Counting objects: 100% (3/3), done.
+Compressing objects: 100% (2/2), done.
+Writing objects: 100% (2/2), 251 bytes | 251.00 KiB/s, done.
+Total 2 (delta 1), reused 0 (delta 0), pack-reused 0
+remote: Resolving deltas: 100% (1/1), completed with 1 local object.
+To github.com:devopsepint2021/mypro.git
+   2d3a9e0..fbe8ac3  master -> master
+[ec2-user@ip-172-31-17-245 mypro]$ 
+[ec2-user@ip-172-31-17-245 mypro]$ 
+[ec2-user@ip-172-31-17-245 mypro]$ 
+[ec2-user@ip-172-31-17-245 mypro]$ git branch -a
+  bug100
+  bug101
+  bug103
+  enc1
+  enc2
+* master
+  remotes/origin/bug100
+  remotes/origin/bug101
+  remotes/origin/bug102
+  remotes/origin/bug103
+  remotes/origin/enc1
+  remotes/origin/enc2
+  remotes/origin/master
+[ec2-user@ip-172-31-17-245 mypro]$ 
+[ec2-user@ip-172-31-17-245 mypro]$ 
+[ec2-user@ip-172-31-17-245 mypro]$ 
+[ec2-user@ip-172-31-17-245 mypro]$ gitpull
+-bash: gitpull: command not found
+[ec2-user@ip-172-31-17-245 mypro]$ git pull
+Already up to date.
+[ec2-user@ip-172-31-17-245 mypro]$ 
+[ec2-user@ip-172-31-17-245 mypro]$ 
+[ec2-user@ip-172-31-17-245 mypro]$ 
+[ec2-user@ip-172-31-17-245 mypro]$ git chekcout -b bug104
+git: 'chekcout' is not a git command. See 'git --help'.
+
+The most similar command is
+	checkout
+[ec2-user@ip-172-31-17-245 mypro]$ git checkout -b bug104
+Switched to a new branch 'bug104'
+[ec2-user@ip-172-31-17-245 mypro]$ 
+[ec2-user@ip-172-31-17-245 mypro]$ 
+[ec2-user@ip-172-31-17-245 mypro]$ 
+[ec2-user@ip-172-31-17-245 mypro]$ 
+[ec2-user@ip-172-31-17-245 mypro]$ git push -u origin bug104
+Total 0 (delta 0), reused 0 (delta 0), pack-reused 0
+remote: 
+remote: Create a pull request for 'bug104' on GitHub by visiting:
+remote:      https://github.com/devopsepint2021/mypro/pull/new/bug104
+remote: 
+To github.com:devopsepint2021/mypro.git
+ * [new branch]      bug104 -> bug104
+Branch 'bug104' set up to track remote branch 'bug104' from 'origin'.
+[ec2-user@ip-172-31-17-245 mypro]$ 
+[ec2-user@ip-172-31-17-245 mypro]$ 
+[ec2-user@ip-172-31-17-245 mypro]$ 
+[ec2-user@ip-172-31-17-245 mypro]$ 
+[ec2-user@ip-172-31-17-245 mypro]$ 
+[ec2-user@ip-172-31-17-245 mypro]$ ls -ltr
+total 8
+-rw-rw-r-- 1 ec2-user ec2-user  0 Sep 18 15:38 f5
+-rw-rw-r-- 1 ec2-user ec2-user  0 Sep 18 15:38 f4
+-rw-rw-r-- 1 ec2-user ec2-user  0 Sep 18 15:38 f3
+-rw-rw-r-- 1 ec2-user ec2-user  0 Sep 18 15:42 f8
+-rw-rw-r-- 1 ec2-user ec2-user  0 Sep 18 15:42 f7
+-rw-rw-r-- 1 ec2-user ec2-user  0 Sep 18 15:42 f6
+-rw-rw-r-- 1 ec2-user ec2-user 12 Sep 18 15:55 f1
+-rw-rw-r-- 1 ec2-user ec2-user  9 Sep 18 15:56 f2
+drwxrwxr-x 2 ec2-user ec2-user 56 Sep 18 16:06 dir1
+-rw-rw-r-- 1 ec2-user ec2-user  0 Sep 18 16:09 a5
+-rw-rw-r-- 1 ec2-user ec2-user  0 Sep 18 16:09 a4
+-rw-rw-r-- 1 ec2-user ec2-user  0 Sep 18 16:09 a3
+-rw-rw-r-- 1 ec2-user ec2-user  0 Sep 18 16:09 a2
+-rw-rw-r-- 1 ec2-user ec2-user  0 Sep 18 16:09 a1
+[ec2-user@ip-172-31-17-245 mypro]$ 
+[ec2-user@ip-172-31-17-245 mypro]$ 
+[ec2-user@ip-172-31-17-245 mypro]$ 
+[ec2-user@ip-172-31-17-245 mypro]$ 
+[ec2-user@ip-172-31-17-245 mypro]$ 
+[ec2-user@ip-172-31-17-245 mypro]$ 
+[ec2-user@ip-172-31-17-245 mypro]$ 
+[ec2-user@ip-172-31-17-245 mypro]$ 
+[ec2-user@ip-172-31-17-245 mypro]$ 
+[ec2-user@ip-172-31-17-245 mypro]$ 
+[ec2-user@ip-172-31-17-245 mypro]$ 
+[ec2-user@ip-172-31-17-245 mypro]$ 
+[ec2-user@ip-172-31-17-245 mypro]$ git branch -a
+  bug100
+  bug101
+  bug103
+* bug104
+  enc1
+  enc2
+  master
+  remotes/origin/bug100
+  remotes/origin/bug101
+  remotes/origin/bug102
+  remotes/origin/bug103
+  remotes/origin/bug104
+  remotes/origin/enc1
+  remotes/origin/enc2
+  remotes/origin/master
+[ec2-user@ip-172-31-17-245 mypro]$ ls -ltr
+total 8
+-rw-rw-r-- 1 ec2-user ec2-user  0 Sep 18 15:38 f5
+-rw-rw-r-- 1 ec2-user ec2-user  0 Sep 18 15:38 f4
+-rw-rw-r-- 1 ec2-user ec2-user  0 Sep 18 15:38 f3
+-rw-rw-r-- 1 ec2-user ec2-user  0 Sep 18 15:42 f8
+-rw-rw-r-- 1 ec2-user ec2-user  0 Sep 18 15:42 f7
+-rw-rw-r-- 1 ec2-user ec2-user  0 Sep 18 15:42 f6
+-rw-rw-r-- 1 ec2-user ec2-user 12 Sep 18 15:55 f1
+-rw-rw-r-- 1 ec2-user ec2-user  9 Sep 18 15:56 f2
+drwxrwxr-x 2 ec2-user ec2-user 56 Sep 18 16:06 dir1
+-rw-rw-r-- 1 ec2-user ec2-user  0 Sep 18 16:09 a5
+-rw-rw-r-- 1 ec2-user ec2-user  0 Sep 18 16:09 a4
+-rw-rw-r-- 1 ec2-user ec2-user  0 Sep 18 16:09 a3
+-rw-rw-r-- 1 ec2-user ec2-user  0 Sep 18 16:09 a2
+-rw-rw-r-- 1 ec2-user ec2-user  0 Sep 18 16:09 a1
+[ec2-user@ip-172-31-17-245 mypro]$ vi a1
+[ec2-user@ip-172-31-17-245 mypro]$ git add a1
+[ec2-user@ip-172-31-17-245 mypro]$ git commit -m "bug104 fixed"
+[bug104 2244b2d] bug104 fixed
+ 1 file changed, 1 insertion(+)
+[ec2-user@ip-172-31-17-245 mypro]$ 
+[ec2-user@ip-172-31-17-245 mypro]$ 
+[ec2-user@ip-172-31-17-245 mypro]$ git push
+Enumerating objects: 5, done.
+Counting objects: 100% (5/5), done.
+Compressing objects: 100% (2/2), done.
+Writing objects: 100% (3/3), 288 bytes | 288.00 KiB/s, done.
+Total 3 (delta 1), reused 0 (delta 0), pack-reused 0
+remote: Resolving deltas: 100% (1/1), completed with 1 local object.
+To github.com:devopsepint2021/mypro.git
+   fbe8ac3..2244b2d  bug104 -> bug104
+[ec2-user@ip-172-31-17-245 mypro]$ 
+[ec2-user@ip-172-31-17-245 mypro]$ 
+[ec2-user@ip-172-31-17-245 mypro]$ 
+[ec2-user@ip-172-31-17-245 mypro]$ 
+[ec2-user@ip-172-31-17-245 mypro]$ cd ../
+[ec2-user@ip-172-31-17-245 ~]$ 
+[ec2-user@ip-172-31-17-245 ~]$ 
+[ec2-user@ip-172-31-17-245 ~]$ 
+[ec2-user@ip-172-31-17-245 ~]$ 
+[ec2-user@ip-172-31-17-245 ~]$ 
+[ec2-user@ip-172-31-17-245 ~]$ git clone git@github.com:devopsepint2021/xyzpro.git
+Cloning into 'xyzpro'...
+warning: You appear to have cloned an empty repository.
+[ec2-user@ip-172-31-17-245 ~]$ cd xyzpro
+[ec2-user@ip-172-31-17-245 xyzpro]$ 
+[ec2-user@ip-172-31-17-245 xyzpro]$ 
+[ec2-user@ip-172-31-17-245 xyzpro]$ 
+[ec2-user@ip-172-31-17-245 xyzpro]$ 
+[ec2-user@ip-172-31-17-245 xyzpro]$ ls -ltra
+total 0
+drwx------ 6 ec2-user ec2-user 170 Sep 18 16:40 ..
+drwxrwxr-x 3 ec2-user ec2-user  18 Sep 18 16:40 .
+drwxrwxr-x 7 ec2-user ec2-user 119 Sep 18 16:40 .git
+[ec2-user@ip-172-31-17-245 xyzpro]$ 
+[ec2-user@ip-172-31-17-245 xyzpro]$ 
+[ec2-user@ip-172-31-17-245 xyzpro]$ 
+[ec2-user@ip-172-31-17-245 xyzpro]$ touch README.md
+[ec2-user@ip-172-31-17-245 xyzpro]$ vi README.md 
+[ec2-user@ip-172-31-17-245 xyzpro]$ 
+[ec2-user@ip-172-31-17-245 xyzpro]$ 
+[ec2-user@ip-172-31-17-245 xyzpro]$ 
+[ec2-user@ip-172-31-17-245 xyzpro]$ 
+[ec2-user@ip-172-31-17-245 xyzpro]$ git add .
+[ec2-user@ip-172-31-17-245 xyzpro]$ git commit -m "added READ Me"
+[master (root-commit) 25e3d88] added READ Me
+ 1 file changed, 1 insertion(+)
+ create mode 100644 README.md
+[ec2-user@ip-172-31-17-245 xyzpro]$ 
+[ec2-user@ip-172-31-17-245 xyzpro]$ 
+[ec2-user@ip-172-31-17-245 xyzpro]$ git push -u origin master
+Enumerating objects: 3, done.
+Counting objects: 100% (3/3), done.
+Writing objects: 100% (3/3), 230 bytes | 230.00 KiB/s, done.
+Total 3 (delta 0), reused 0 (delta 0), pack-reused 0
+To github.com:devopsepint2021/xyzpro.git
+ * [new branch]      master -> master
+Branch 'master' set up to track remote branch 'master' from 'origin'.
+[ec2-user@ip-172-31-17-245 xyzpro]$ 
+[ec2-user@ip-172-31-17-245 xyzpro]$ 
+[ec2-user@ip-172-31-17-245 xyzpro]$ 
+[ec2-user@ip-172-31-17-245 xyzpro]$ 
+[ec2-user@ip-172-31-17-245 xyzpro]$ 
+[ec2-user@ip-172-31-17-245 xyzpro]$ 
+[ec2-user@ip-172-31-17-245 xyzpro]$ ls -ltr
+total 4
+-rw-rw-r-- 1 ec2-user ec2-user 15 Sep 18 16:41 README.md
+[ec2-user@ip-172-31-17-245 xyzpro]$ vi .gitignore
+[ec2-user@ip-172-31-17-245 xyzpro]$ vi .gitignore
+[ec2-user@ip-172-31-17-245 xyzpro]$ 
+[ec2-user@ip-172-31-17-245 xyzpro]$ 
+[ec2-user@ip-172-31-17-245 xyzpro]$ 
+[ec2-user@ip-172-31-17-245 xyzpro]$ 
+[ec2-user@ip-172-31-17-245 xyzpro]$ ls -ltr
+total 4
+-rw-rw-r-- 1 ec2-user ec2-user 15 Sep 18 16:41 README.md
+[ec2-user@ip-172-31-17-245 xyzpro]$ 
+[ec2-user@ip-172-31-17-245 xyzpro]$ 
+[ec2-user@ip-172-31-17-245 xyzpro]$ 
+[ec2-user@ip-172-31-17-245 xyzpro]$ git add .gitignore 
+[ec2-user@ip-172-31-17-245 xyzpro]$ git commit -m "added ignore file"
+[master 2b9d442] added ignore file
+ 1 file changed, 2 insertions(+)
+ create mode 100644 .gitignore
+[ec2-user@ip-172-31-17-245 xyzpro]$ git push
+Enumerating objects: 4, done.
+Counting objects: 100% (4/4), done.
+Compressing objects: 100% (2/2), done.
+Writing objects: 100% (3/3), 293 bytes | 293.00 KiB/s, done.
+Total 3 (delta 0), reused 0 (delta 0), pack-reused 0
+To github.com:devopsepint2021/xyzpro.git
+   25e3d88..2b9d442  master -> master
+[ec2-user@ip-172-31-17-245 xyzpro]$ 
+[ec2-user@ip-172-31-17-245 xyzpro]$ 
+[ec2-user@ip-172-31-17-245 xyzpro]$ 
+[ec2-user@ip-172-31-17-245 xyzpro]$ 
+[ec2-user@ip-172-31-17-245 xyzpro]$ 
+[ec2-user@ip-172-31-17-245 xyzpro]$ 
+[ec2-user@ip-172-31-17-245 xyzpro]$ ls -la
+total 8
+drwxrwxr-x 3 ec2-user ec2-user  53 Sep 18 16:43 .
+drwx------ 6 ec2-user ec2-user 170 Sep 18 16:43 ..
+drwxrwxr-x 8 ec2-user ec2-user 166 Sep 18 16:44 .git
+-rw-rw-r-- 1 ec2-user ec2-user  14 Sep 18 16:43 .gitignore
+-rw-rw-r-- 1 ec2-user ec2-user  15 Sep 18 16:41 README.md
+[ec2-user@ip-172-31-17-245 xyzpro]$ touch abc.class
+[ec2-user@ip-172-31-17-245 xyzpro]$ 
+[ec2-user@ip-172-31-17-245 xyzpro]$ 
+[ec2-user@ip-172-31-17-245 xyzpro]$ git add .
+[ec2-user@ip-172-31-17-245 xyzpro]$ git status
+On branch master
+Your branch is up to date with 'origin/master'.
+
+nothing to commit, working tree clean
+[ec2-user@ip-172-31-17-245 xyzpro]$ ls -la
+total 8
+drwxrwxr-x 3 ec2-user ec2-user  70 Sep 18 16:44 .
+drwx------ 6 ec2-user ec2-user 170 Sep 18 16:43 ..
+drwxrwxr-x 8 ec2-user ec2-user 166 Sep 18 16:44 .git
+-rw-rw-r-- 1 ec2-user ec2-user  14 Sep 18 16:43 .gitignore
+-rw-rw-r-- 1 ec2-user ec2-user  15 Sep 18 16:41 README.md
+-rw-rw-r-- 1 ec2-user ec2-user   0 Sep 18 16:44 abc.class
+[ec2-user@ip-172-31-17-245 xyzpro]$ cat .gitignore 
+*.class
+*.pyc
+[ec2-user@ip-172-31-17-245 xyzpro]$ 
+[ec2-user@ip-172-31-17-245 xyzpro]$ 
+[ec2-user@ip-172-31-17-245 xyzpro]$ 
+[ec2-user@ip-172-31-17-245 xyzpro]$ rm -rf abc.class 
+[ec2-user@ip-172-31-17-245 xyzpro]$ 
+[ec2-user@ip-172-31-17-245 xyzpro]$ 
+[ec2-user@ip-172-31-17-245 xyzpro]$ 
+[ec2-user@ip-172-31-17-245 xyzpro]$ 
+[ec2-user@ip-172-31-17-245 xyzpro]$ 
+[ec2-user@ip-172-31-17-245 xyzpro]$ ls -ltr
+total 4
+-rw-rw-r-- 1 ec2-user ec2-user 15 Sep 18 16:41 README.md
+[ec2-user@ip-172-31-17-245 xyzpro]$ 
+[ec2-user@ip-172-31-17-245 xyzpro]$ 
+[ec2-user@ip-172-31-17-245 xyzpro]$ 
+[ec2-user@ip-172-31-17-245 xyzpro]$ 
+[ec2-user@ip-172-31-17-245 xyzpro]$ 
+[ec2-user@ip-172-31-17-245 xyzpro]$ 
+[ec2-user@ip-172-31-17-245 xyzpro]$ 
+[ec2-user@ip-172-31-17-245 xyzpro]$ 
+[ec2-user@ip-172-31-17-245 xyzpro]$ git checkout -b bug100
+Switched to a new branch 'bug100'
+[ec2-user@ip-172-31-17-245 xyzpro]$ 
+[ec2-user@ip-172-31-17-245 xyzpro]$ 
+[ec2-user@ip-172-31-17-245 xyzpro]$ git branch -a
+* bug100
+  master
+  remotes/origin/master
+[ec2-user@ip-172-31-17-245 xyzpro]$ ls -ltr
+total 4
+-rw-rw-r-- 1 ec2-user ec2-user 15 Sep 18 16:41 README.md
+[ec2-user@ip-172-31-17-245 xyzpro]$ 
+[ec2-user@ip-172-31-17-245 xyzpro]$ 
+[ec2-user@ip-172-31-17-245 xyzpro]$ 
+[ec2-user@ip-172-31-17-245 xyzpro]$ 
+[ec2-user@ip-172-31-17-245 xyzpro]$ touch b1 b2 b3
+[ec2-user@ip-172-31-17-245 xyzpro]$ 
+[ec2-user@ip-172-31-17-245 xyzpro]$ 
+[ec2-user@ip-172-31-17-245 xyzpro]$ 
+[ec2-user@ip-172-31-17-245 xyzpro]$ 
+[ec2-user@ip-172-31-17-245 xyzpro]$ 
+[ec2-user@ip-172-31-17-245 xyzpro]$ ls -ltr
+total 4
+-rw-rw-r-- 1 ec2-user ec2-user 15 Sep 18 16:41 README.md
+-rw-rw-r-- 1 ec2-user ec2-user  0 Sep 18 16:49 b3
+-rw-rw-r-- 1 ec2-user ec2-user  0 Sep 18 16:49 b2
+-rw-rw-r-- 1 ec2-user ec2-user  0 Sep 18 16:49 b1
+[ec2-user@ip-172-31-17-245 xyzpro]$ vi README.md 
+[ec2-user@ip-172-31-17-245 xyzpro]$ 
+[ec2-user@ip-172-31-17-245 xyzpro]$ 
+[ec2-user@ip-172-31-17-245 xyzpro]$ 
+[ec2-user@ip-172-31-17-245 xyzpro]$ git status
+On branch bug100
+Changes not staged for commit:
+  (use "git add <file>..." to update what will be committed)
+  (use "git restore <file>..." to discard changes in working directory)
+	modified:   README.md
+
+Untracked files:
+  (use "git add <file>..." to include in what will be committed)
+	b1
+	b2
+	b3
+
+no changes added to commit (use "git add" and/or "git commit -a")
+[ec2-user@ip-172-31-17-245 xyzpro]$ 
+[ec2-user@ip-172-31-17-245 xyzpro]$ 
+[ec2-user@ip-172-31-17-245 xyzpro]$ git add .
+[ec2-user@ip-172-31-17-245 xyzpro]$ 
+[ec2-user@ip-172-31-17-245 xyzpro]$ 
+[ec2-user@ip-172-31-17-245 xyzpro]$ 
+[ec2-user@ip-172-31-17-245 xyzpro]$ git checkout master 
+M	README.md
+A	b1
+A	b2
+A	b3
+Switched to branch 'master'
+Your branch is up to date with 'origin/master'.
+[ec2-user@ip-172-31-17-245 xyzpro]$ ls -ltr
+total 4
+-rw-rw-r-- 1 ec2-user ec2-user 0 Sep 18 16:49 b3
+-rw-rw-r-- 1 ec2-user ec2-user 0 Sep 18 16:49 b2
+-rw-rw-r-- 1 ec2-user ec2-user 0 Sep 18 16:49 b1
+-rw-rw-r-- 1 ec2-user ec2-user 9 Sep 18 16:49 README.md
+[ec2-user@ip-172-31-17-245 xyzpro]$ git checkout bug100
+M	README.md
+A	b1
+A	b2
+A	b3
+Switched to branch 'bug100'
+[ec2-user@ip-172-31-17-245 xyzpro]$ 
+[ec2-user@ip-172-31-17-245 xyzpro]$ 
+[ec2-user@ip-172-31-17-245 xyzpro]$ 
+[ec2-user@ip-172-31-17-245 xyzpro]$ git stash list
+[ec2-user@ip-172-31-17-245 xyzpro]$ 
+[ec2-user@ip-172-31-17-245 xyzpro]$ 
+[ec2-user@ip-172-31-17-245 xyzpro]$ git add .
+[ec2-user@ip-172-31-17-245 xyzpro]$ git stash
+Saved working directory and index state WIP on bug100: 2b9d442 added ignore file
+[ec2-user@ip-172-31-17-245 xyzpro]$ 
+[ec2-user@ip-172-31-17-245 xyzpro]$ 
+[ec2-user@ip-172-31-17-245 xyzpro]$ 
+[ec2-user@ip-172-31-17-245 xyzpro]$ git stash list
+stash@{0}: WIP on bug100: 2b9d442 added ignore file
+[ec2-user@ip-172-31-17-245 xyzpro]$ ls -ltr
+total 4
+-rw-rw-r-- 1 ec2-user ec2-user 15 Sep 18 16:55 README.md
+[ec2-user@ip-172-31-17-245 xyzpro]$ 
+[ec2-user@ip-172-31-17-245 xyzpro]$ 
+[ec2-user@ip-172-31-17-245 xyzpro]$ 
+[ec2-user@ip-172-31-17-245 xyzpro]$ git checkout master 
+Switched to branch 'master'
+Your branch is up to date with 'origin/master'.
+[ec2-user@ip-172-31-17-245 xyzpro]$ 
+[ec2-user@ip-172-31-17-245 xyzpro]$ 
+[ec2-user@ip-172-31-17-245 xyzpro]$ 
+[ec2-user@ip-172-31-17-245 xyzpro]$ git chekcout -b bug101
+git: 'chekcout' is not a git command. See 'git --help'.
+
+The most similar command is
+	checkout
+[ec2-user@ip-172-31-17-245 xyzpro]$ git checkout -b bug101
+Switched to a new branch 'bug101'
+[ec2-user@ip-172-31-17-245 xyzpro]$ 
+[ec2-user@ip-172-31-17-245 xyzpro]$ 
+[ec2-user@ip-172-31-17-245 xyzpro]$ 
+[ec2-user@ip-172-31-17-245 xyzpro]$ ls -ltr
+total 4
+-rw-rw-r-- 1 ec2-user ec2-user 15 Sep 18 16:55 README.md
+[ec2-user@ip-172-31-17-245 xyzpro]$ vi f1 f2
+2 files to edit
+[ec2-user@ip-172-31-17-245 xyzpro]$ ls -ltr
+total 4
+-rw-rw-r-- 1 ec2-user ec2-user 15 Sep 18 16:55 README.md
+-rw-rw-r-- 1 ec2-user ec2-user  0 Sep 18 16:57 f1
+[ec2-user@ip-172-31-17-245 xyzpro]$ ls -ltr
+total 4
+-rw-rw-r-- 1 ec2-user ec2-user 15 Sep 18 16:55 README.md
+-rw-rw-r-- 1 ec2-user ec2-user  0 Sep 18 16:57 f1
+[ec2-user@ip-172-31-17-245 xyzpro]$ 
+[ec2-user@ip-172-31-17-245 xyzpro]$ 
+[ec2-user@ip-172-31-17-245 xyzpro]$ 
+[ec2-user@ip-172-31-17-245 xyzpro]$ 
+[ec2-user@ip-172-31-17-245 xyzpro]$ 
+[ec2-user@ip-172-31-17-245 xyzpro]$ 
+[ec2-user@ip-172-31-17-245 xyzpro]$ touch f2
+[ec2-user@ip-172-31-17-245 xyzpro]$ git add .
+[ec2-user@ip-172-31-17-245 xyzpro]$ git commit -m "bug101 fixed"
+[bug101 30110b9] bug101 fixed
+ 2 files changed, 0 insertions(+), 0 deletions(-)
+ create mode 100644 f1
+ create mode 100644 f2
+[ec2-user@ip-172-31-17-245 xyzpro]$ git push -u origin bug101
+Enumerating objects: 4, done.
+Counting objects: 100% (4/4), done.
+Compressing objects: 100% (2/2), done.
+Writing objects: 100% (3/3), 307 bytes | 307.00 KiB/s, done.
+Total 3 (delta 0), reused 0 (delta 0), pack-reused 0
+remote: 
+remote: Create a pull request for 'bug101' on GitHub by visiting:
+remote:      https://github.com/devopsepint2021/xyzpro/pull/new/bug101
+remote: 
+To github.com:devopsepint2021/xyzpro.git
+ * [new branch]      bug101 -> bug101
+Branch 'bug101' set up to track remote branch 'bug101' from 'origin'.
+[ec2-user@ip-172-31-17-245 xyzpro]$ 
+[ec2-user@ip-172-31-17-245 xyzpro]$ 
+[ec2-user@ip-172-31-17-245 xyzpro]$ 
+[ec2-user@ip-172-31-17-245 xyzpro]$ git chekcout master 
+git: 'chekcout' is not a git command. See 'git --help'.
+
+The most similar command is
+	checkout
+[ec2-user@ip-172-31-17-245 xyzpro]$ git checkout master 
+Switched to branch 'master'
+Your branch is up to date with 'origin/master'.
+[ec2-user@ip-172-31-17-245 xyzpro]$ ls -la
+total 8
+drwxrwxr-x 3 ec2-user ec2-user  53 Sep 18 16:59 .
+drwx------ 6 ec2-user ec2-user 170 Sep 18 16:57 ..
+drwxrwxr-x 8 ec2-user ec2-user 183 Sep 18 16:59 .git
+-rw-rw-r-- 1 ec2-user ec2-user  14 Sep 18 16:43 .gitignore
+-rw-rw-r-- 1 ec2-user ec2-user  15 Sep 18 16:55 README.md
+[ec2-user@ip-172-31-17-245 xyzpro]$ 
+[ec2-user@ip-172-31-17-245 xyzpro]$ 
+[ec2-user@ip-172-31-17-245 xyzpro]$ 
+[ec2-user@ip-172-31-17-245 xyzpro]$ git merge bug101
+Updating 2b9d442..30110b9
+Fast-forward
+ f1 | 0
+ f2 | 0
+ 2 files changed, 0 insertions(+), 0 deletions(-)
+ create mode 100644 f1
+ create mode 100644 f2
+[ec2-user@ip-172-31-17-245 xyzpro]$ 
+[ec2-user@ip-172-31-17-245 xyzpro]$ 
+[ec2-user@ip-172-31-17-245 xyzpro]$ ls -ltr
+total 4
+-rw-rw-r-- 1 ec2-user ec2-user 15 Sep 18 16:55 README.md
+-rw-rw-r-- 1 ec2-user ec2-user  0 Sep 18 16:59 f2
+-rw-rw-r-- 1 ec2-user ec2-user  0 Sep 18 16:59 f1
+[ec2-user@ip-172-31-17-245 xyzpro]$ git push
+Total 0 (delta 0), reused 0 (delta 0), pack-reused 0
+To github.com:devopsepint2021/xyzpro.git
+   2b9d442..30110b9  master -> master
+[ec2-user@ip-172-31-17-245 xyzpro]$ 
+[ec2-user@ip-172-31-17-245 xyzpro]$ 
+[ec2-user@ip-172-31-17-245 xyzpro]$ 
+[ec2-user@ip-172-31-17-245 xyzpro]$ git checkout bug100
+Switched to branch 'bug100'
+[ec2-user@ip-172-31-17-245 xyzpro]$ ls -ltra
+total 8
+-rw-rw-r-- 1 ec2-user ec2-user  14 Sep 18 16:43 .gitignore
+-rw-rw-r-- 1 ec2-user ec2-user  15 Sep 18 16:55 README.md
+drwx------ 6 ec2-user ec2-user 170 Sep 18 16:57 ..
+drwxrwxr-x 8 ec2-user ec2-user 183 Sep 18 17:00 .git
+drwxrwxr-x 3 ec2-user ec2-user  53 Sep 18 17:00 .
+[ec2-user@ip-172-31-17-245 xyzpro]$ git stash list
+stash@{0}: WIP on bug100: 2b9d442 added ignore file
+[ec2-user@ip-172-31-17-245 xyzpro]$ 
+[ec2-user@ip-172-31-17-245 xyzpro]$ 
+[ec2-user@ip-172-31-17-245 xyzpro]$ 
+[ec2-user@ip-172-31-17-245 xyzpro]$ 
+[ec2-user@ip-172-31-17-245 xyzpro]$ git stash apply stash@{0}
+On branch bug100
+Changes to be committed:
+  (use "git restore --staged <file>..." to unstage)
+	new file:   b1
+	new file:   b2
+	new file:   b3
+
+Changes not staged for commit:
+  (use "git add <file>..." to update what will be committed)
+  (use "git restore <file>..." to discard changes in working directory)
+	modified:   README.md
+
+[ec2-user@ip-172-31-17-245 xyzpro]$ 
+[ec2-user@ip-172-31-17-245 xyzpro]$ 
+[ec2-user@ip-172-31-17-245 xyzpro]$ 
+[ec2-user@ip-172-31-17-245 xyzpro]$ ls -ltra
+total 8
+-rw-rw-r-- 1 ec2-user ec2-user  14 Sep 18 16:43 .gitignore
+drwx------ 6 ec2-user ec2-user 170 Sep 18 16:57 ..
+-rw-rw-r-- 1 ec2-user ec2-user   0 Sep 18 17:01 b3
+-rw-rw-r-- 1 ec2-user ec2-user   0 Sep 18 17:01 b2
+-rw-rw-r-- 1 ec2-user ec2-user   0 Sep 18 17:01 b1
+-rw-rw-r-- 1 ec2-user ec2-user   9 Sep 18 17:01 README.md
+drwxrwxr-x 3 ec2-user ec2-user  83 Sep 18 17:01 .
+drwxrwxr-x 8 ec2-user ec2-user 183 Sep 18 17:01 .git
+[ec2-user@ip-172-31-17-245 xyzpro]$ touch b4
+[ec2-user@ip-172-31-17-245 xyzpro]$ 
+[ec2-user@ip-172-31-17-245 xyzpro]$ 
+[ec2-user@ip-172-31-17-245 xyzpro]$ 
+[ec2-user@ip-172-31-17-245 xyzpro]$ 
+[ec2-user@ip-172-31-17-245 xyzpro]$ 
+[ec2-user@ip-172-31-17-245 xyzpro]$ 
+[ec2-user@ip-172-31-17-245 xyzpro]$ git add .
+[ec2-user@ip-172-31-17-245 xyzpro]$ git commit -m "bug100 fixed"
+[bug100 6145963] bug100 fixed
+ 5 files changed, 3 insertions(+), 1 deletion(-)
+ create mode 100644 b1
+ create mode 100644 b2
+ create mode 100644 b3
+ create mode 100644 b4
+[ec2-user@ip-172-31-17-245 xyzpro]$ 
+[ec2-user@ip-172-31-17-245 xyzpro]$ 
+[ec2-user@ip-172-31-17-245 xyzpro]$ git push -u origin bug100
+Enumerating objects: 6, done.
+Counting objects: 100% (6/6), done.
+Compressing objects: 100% (2/2), done.
+Writing objects: 100% (4/4), 332 bytes | 332.00 KiB/s, done.
+Total 4 (delta 0), reused 0 (delta 0), pack-reused 0
+remote: 
+remote: Create a pull request for 'bug100' on GitHub by visiting:
+remote:      https://github.com/devopsepint2021/xyzpro/pull/new/bug100
+remote: 
+To github.com:devopsepint2021/xyzpro.git
+ * [new branch]      bug100 -> bug100
+Branch 'bug100' set up to track remote branch 'bug100' from 'origin'.
+[ec2-user@ip-172-31-17-245 xyzpro]$ 
+[ec2-user@ip-172-31-17-245 xyzpro]$ 
+[ec2-user@ip-172-31-17-245 xyzpro]$ 
+[ec2-user@ip-172-31-17-245 xyzpro]$ 
+[ec2-user@ip-172-31-17-245 xyzpro]$ git stash list
+stash@{0}: WIP on bug100: 2b9d442 added ignore file
+[ec2-user@ip-172-31-17-245 xyzpro]$ 
+[ec2-user@ip-172-31-17-245 xyzpro]$ 
+[ec2-user@ip-172-31-17-245 xyzpro]$ 
+[ec2-user@ip-172-31-17-245 xyzpro]$ 
+[ec2-user@ip-172-31-17-245 xyzpro]$ git stash clean stash@{0}
+fatal: unknown subcommand: clean
+
+usage: git stash list [<options>]
+   or: git stash show [<options>] [<stash>]
+   or: git stash drop [-q|--quiet] [<stash>]
+   or: git stash ( pop | apply ) [--index] [-q|--quiet] [<stash>]
+   or: git stash branch <branchname> [<stash>]
+   or: git stash clear
+   or: git stash [push [-p|--patch] [-k|--[no-]keep-index] [-q|--quiet]
+          [-u|--include-untracked] [-a|--all] [-m|--message <message>]
+          [--pathspec-from-file=<file> [--pathspec-file-nul]]
+          [--] [<pathspec>...]]
+   or: git stash save [-p|--patch] [-k|--[no-]keep-index] [-q|--quiet]
+          [-u|--include-untracked] [-a|--all] [<message>]
+
+[ec2-user@ip-172-31-17-245 xyzpro]$ git stash clear  stash@{0}
+error: git stash clear with arguments is unimplemented
+[ec2-user@ip-172-31-17-245 xyzpro]$ git stash clear
+[ec2-user@ip-172-31-17-245 xyzpro]$ 
+[ec2-user@ip-172-31-17-245 xyzpro]$ 
+[ec2-user@ip-172-31-17-245 xyzpro]$ git stash list
+[ec2-user@ip-172-31-17-245 xyzpro]$ 
+[ec2-user@ip-172-31-17-245 xyzpro]$ 
+[ec2-user@ip-172-31-17-245 xyzpro]$ 
+[ec2-user@ip-172-31-17-245 xyzpro]$ 
+[ec2-user@ip-172-31-17-245 xyzpro]$ 
+[ec2-user@ip-172-31-17-245 xyzpro]$ 
+[ec2-user@ip-172-31-17-245 xyzpro]$ 
+[ec2-user@ip-172-31-17-245 xyzpro]$ 
