@@ -1451,3 +1451,170 @@ error: git stash clear with arguments is unimplemented
 [ec2-user@ip-172-31-17-245 xyzpro]$ 
 [ec2-user@ip-172-31-17-245 xyzpro]$ 
 [ec2-user@ip-172-31-17-245 xyzpro]$ 
+[ec2-user@ip-172-31-17-245 xyzpro]$ git pull
+remote: Enumerating objects: 6, done.
+remote: Counting objects: 100% (6/6), done.
+remote: Compressing objects: 100% (3/3), done.
+remote: Total 4 (delta 0), reused 0 (delta 0), pack-reused 0
+Unpacking objects: 100% (4/4), 1.30 KiB | 1.30 MiB/s, done.
+From github.com:devopsepint2021/xyzpro
+   30110b9..38b6f14  master     -> origin/master
+ * [new tag]         v1         -> v1
+Already up to date.
+[ec2-user@ip-172-31-17-245 xyzpro]$ 
+[ec2-user@ip-172-31-17-245 xyzpro]$ 
+[ec2-user@ip-172-31-17-245 xyzpro]$ 
+[ec2-user@ip-172-31-17-245 xyzpro]$ 
+[ec2-user@ip-172-31-17-245 xyzpro]$ 
+[ec2-user@ip-172-31-17-245 xyzpro]$ git tag
+v1
+[ec2-user@ip-172-31-17-245 xyzpro]$ 
+[ec2-user@ip-172-31-17-245 xyzpro]$ 
+[ec2-user@ip-172-31-17-245 xyzpro]$ 
+[ec2-user@ip-172-31-17-245 xyzpro]$ ls -ltr
+total 4
+-rw-rw-r-- 1 ec2-user ec2-user 0 Sep 18 17:01 b3
+-rw-rw-r-- 1 ec2-user ec2-user 0 Sep 18 17:01 b2
+-rw-rw-r-- 1 ec2-user ec2-user 0 Sep 18 17:01 b1
+-rw-rw-r-- 1 ec2-user ec2-user 9 Sep 18 17:01 README.md
+-rw-rw-r-- 1 ec2-user ec2-user 0 Sep 18 17:02 b4
+[ec2-user@ip-172-31-17-245 xyzpro]$ 
+[ec2-user@ip-172-31-17-245 xyzpro]$ 
+[ec2-user@ip-172-31-17-245 xyzpro]$ 
+[ec2-user@ip-172-31-17-245 xyzpro]$ git checkout master 
+Switched to branch 'master'
+Your branch is behind 'origin/master' by 2 commits, and can be fast-forwarded.
+  (use "git pull" to update your local branch)
+[ec2-user@ip-172-31-17-245 xyzpro]$ git pull
+Updating 30110b9..38b6f14
+Fast-forward
+ f1 | 1 +
+ 1 file changed, 1 insertion(+)
+[ec2-user@ip-172-31-17-245 xyzpro]$ 
+[ec2-user@ip-172-31-17-245 xyzpro]$ 
+[ec2-user@ip-172-31-17-245 xyzpro]$ 
+[ec2-user@ip-172-31-17-245 xyzpro]$ 
+[ec2-user@ip-172-31-17-245 xyzpro]$ git checkout -b bug110
+Switched to a new branch 'bug110'
+[ec2-user@ip-172-31-17-245 xyzpro]$ touch a{1..10}
+[ec2-user@ip-172-31-17-245 xyzpro]$ git add .
+[ec2-user@ip-172-31-17-245 xyzpro]$ git commit -m "bug110 fixed"
+[bug110 09b4b60] bug110 fixed
+ 10 files changed, 0 insertions(+), 0 deletions(-)
+ create mode 100644 a1
+ create mode 100644 a10
+ create mode 100644 a2
+ create mode 100644 a3
+ create mode 100644 a4
+ create mode 100644 a5
+ create mode 100644 a6
+ create mode 100644 a7
+ create mode 100644 a8
+ create mode 100644 a9
+[ec2-user@ip-172-31-17-245 xyzpro]$ 
+[ec2-user@ip-172-31-17-245 xyzpro]$ 
+[ec2-user@ip-172-31-17-245 xyzpro]$ git push -u origin bug110
+Enumerating objects: 3, done.
+Counting objects: 100% (3/3), done.
+Compressing objects: 100% (2/2), done.
+Writing objects: 100% (2/2), 351 bytes | 351.00 KiB/s, done.
+Total 2 (delta 0), reused 0 (delta 0), pack-reused 0
+remote: 
+remote: Create a pull request for 'bug110' on GitHub by visiting:
+remote:      https://github.com/devopsepint2021/xyzpro/pull/new/bug110
+remote: 
+To github.com:devopsepint2021/xyzpro.git
+ * [new branch]      bug110 -> bug110
+Branch 'bug110' set up to track remote branch 'bug110' from 'origin'.
+[ec2-user@ip-172-31-17-245 xyzpro]$ 
+[ec2-user@ip-172-31-17-245 xyzpro]$ 
+[ec2-user@ip-172-31-17-245 xyzpro]$ git chekcout master 
+git: 'chekcout' is not a git command. See 'git --help'.
+
+The most similar command is
+	checkout
+[ec2-user@ip-172-31-17-245 xyzpro]$ git checkout master 
+Switched to branch 'master'
+Your branch is up to date with 'origin/master'.
+[ec2-user@ip-172-31-17-245 xyzpro]$ 
+[ec2-user@ip-172-31-17-245 xyzpro]$ 
+[ec2-user@ip-172-31-17-245 xyzpro]$ 
+[ec2-user@ip-172-31-17-245 xyzpro]$ git push
+Everything up-to-date
+[ec2-user@ip-172-31-17-245 xyzpro]$ 
+[ec2-user@ip-172-31-17-245 xyzpro]$ 
+[ec2-user@ip-172-31-17-245 xyzpro]$ 
+[ec2-user@ip-172-31-17-245 xyzpro]$ git merge bug110
+Updating 38b6f14..09b4b60
+Fast-forward
+ a1  | 0
+ a10 | 0
+ a2  | 0
+ a3  | 0
+ a4  | 0
+ a5  | 0
+ a6  | 0
+ a7  | 0
+ a8  | 0
+ a9  | 0
+ 10 files changed, 0 insertions(+), 0 deletions(-)
+ create mode 100644 a1
+ create mode 100644 a10
+ create mode 100644 a2
+ create mode 100644 a3
+ create mode 100644 a4
+ create mode 100644 a5
+ create mode 100644 a6
+ create mode 100644 a7
+ create mode 100644 a8
+ create mode 100644 a9
+[ec2-user@ip-172-31-17-245 xyzpro]$ 
+[ec2-user@ip-172-31-17-245 xyzpro]$ 
+[ec2-user@ip-172-31-17-245 xyzpro]$ git push
+Total 0 (delta 0), reused 0 (delta 0), pack-reused 0
+To github.com:devopsepint2021/xyzpro.git
+   38b6f14..09b4b60  master -> master
+[ec2-user@ip-172-31-17-245 xyzpro]$ 
+[ec2-user@ip-172-31-17-245 xyzpro]$ 
+[ec2-user@ip-172-31-17-245 xyzpro]$ 
+[ec2-user@ip-172-31-17-245 xyzpro]$ 
+[ec2-user@ip-172-31-17-245 xyzpro]$ 
+[ec2-user@ip-172-31-17-245 xyzpro]$ 
+[ec2-user@ip-172-31-17-245 xyzpro]$ 
+[ec2-user@ip-172-31-17-245 xyzpro]$ 
+[ec2-user@ip-172-31-17-245 xyzpro]$ ls -ltr
+total 8
+-rw-rw-r-- 1 ec2-user ec2-user  0 Sep 18 17:29 f2
+-rw-rw-r-- 1 ec2-user ec2-user 15 Sep 18 17:29 README.md
+-rw-rw-r-- 1 ec2-user ec2-user  6 Sep 18 17:29 f1
+-rw-rw-r-- 1 ec2-user ec2-user  0 Sep 18 17:30 a9
+-rw-rw-r-- 1 ec2-user ec2-user  0 Sep 18 17:30 a8
+-rw-rw-r-- 1 ec2-user ec2-user  0 Sep 18 17:30 a7
+-rw-rw-r-- 1 ec2-user ec2-user  0 Sep 18 17:30 a6
+-rw-rw-r-- 1 ec2-user ec2-user  0 Sep 18 17:30 a5
+-rw-rw-r-- 1 ec2-user ec2-user  0 Sep 18 17:30 a4
+-rw-rw-r-- 1 ec2-user ec2-user  0 Sep 18 17:30 a3
+-rw-rw-r-- 1 ec2-user ec2-user  0 Sep 18 17:30 a2
+-rw-rw-r-- 1 ec2-user ec2-user  0 Sep 18 17:30 a10
+-rw-rw-r-- 1 ec2-user ec2-user  0 Sep 18 17:30 a1
+[ec2-user@ip-172-31-17-245 xyzpro]$ 
+[ec2-user@ip-172-31-17-245 xyzpro]$ 
+[ec2-user@ip-172-31-17-245 xyzpro]$ 
+[ec2-user@ip-172-31-17-245 xyzpro]$ 
+[ec2-user@ip-172-31-17-245 xyzpro]$ git tag -a v2 -m "xyzpro v2"
+[ec2-user@ip-172-31-17-245 xyzpro]$ 
+[ec2-user@ip-172-31-17-245 xyzpro]$ 
+[ec2-user@ip-172-31-17-245 xyzpro]$ 
+[ec2-user@ip-172-31-17-245 xyzpro]$ git tag
+v1
+v2
+[ec2-user@ip-172-31-17-245 xyzpro]$ 
+[ec2-user@ip-172-31-17-245 xyzpro]$ 
+[ec2-user@ip-172-31-17-245 xyzpro]$ 
+[ec2-user@ip-172-31-17-245 xyzpro]$ git push -u origin v2
+Enumerating objects: 1, done.
+Counting objects: 100% (1/1), done.
+Writing objects: 100% (1/1), 161 bytes | 161.00 KiB/s, done.
+Total 1 (delta 0), reused 0 (delta 0), pack-reused 0
+To github.com:devopsepint2021/xyzpro.git
+ * [new tag]         v2 -> v2
