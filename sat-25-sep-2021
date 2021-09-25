@@ -44,3 +44,21 @@
    43  docker kill bb628df1e247
    44  docker ps -a
    45  history
+
+
+
+Root user commands
+
+[ec2-user@ip-172-31-87-67 ~]$ sudo su - 
+Last login: Sat Sep 25 16:58:40 UTC 2021 on pts/0
+[root@ip-172-31-87-67 ~]# 
+[root@ip-172-31-87-67 ~]# 
+[root@ip-172-31-87-67 ~]# 
+[root@ip-172-31-87-67 ~]# history
+    1  whoami
+    2  docker ps
+    3  cat /etc/group
+    4  usermod -aG docker ec2-user
+    5  cat /etc/group
+    6  exit
+    7  history
