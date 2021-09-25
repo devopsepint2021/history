@@ -1,0 +1,46 @@
+[ec2-user@ip-172-31-87-67 ~]$ history
+    1  sudo yum install docker -y
+    2  sudo systemctl status docker
+    3  sudo systemctl start docker
+    4  sudo systemctl status docker
+    5  sudo systemctl enable docker
+    6  whoami
+    7  docker ps
+    8  sudo su - 
+    9  exit
+   10  docker images
+   11  docker pull centos
+   12  docker images
+   13  docker pull centos:centos8.4.2105
+   14  docker images
+   15  docker pull centos:8
+   16  docker images
+   17  docker pull centos:7
+   18  docker images
+   19  docker run centos:8 pwd
+   20  docker ps
+   21  docker ps -a
+   22  docker run -it centos:8 bash
+   23  docker ps -a
+   24  docker run centos:8 bash
+   25  docker ps -a
+   26  docker run -it centos:8 bash
+   27  docker ps
+   28  docker exec -it aee73024538a bash
+   29  docker ps
+   30  docker kill aee73024538a
+   31  docker ps
+   32  docker ps -a
+   33  docker rm aee73024538a 4d2b05aff249 0d7699dcbd69 3c3c12537a05
+   34  docker ps -a
+   35  docker run -it --rm centos:8 bash
+   36  docker ps -a
+   37  tail -f /dev/null
+   38  docker run -d --rm centos:8 tail -f /dev/null
+   39  docker ps
+   40  docker exec -it bb628df1e247 bash
+   41  docker exec -it bb628df1e247 sh
+   42  docker ps
+   43  docker kill bb628df1e247
+   44  docker ps -a
+   45  history
