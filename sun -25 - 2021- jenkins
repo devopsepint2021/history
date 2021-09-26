@@ -1,0 +1,12 @@
+ubuntu@ip-172-31-89-71:~$ history
+    1  wget -q -O - https://pkg.jenkins.io/debian-stable/jenkins.io.key | sudo apt-key add -
+    2  sudo sh -c 'echo deb https://pkg.jenkins.io/debian-stable binary/ > /etc/apt/sources.list.d/jenkins.list'
+    3  sudo apt-get update
+       sudo apt install openjdk-11-jdk
+    4  sudo apt-get install jenkins
+    5  java
+    8  sudo systemctl status jenkins
+   13  sudo systemctl enable jenkins
+   14  ps -ef | grep java
+   15  sudo cat /var/lib/jenkins/secrets/initialAdminPassword
+   16  history
